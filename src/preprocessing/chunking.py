@@ -17,9 +17,13 @@ Court: {row['Court']}
 """
 
     chunks.append({
-      "source":"IPC",
-      "text":txt.strip()
-    })
+ "source":"IPC",
+ "text":txt.strip(),
+
+ "metadata":{
+   "url":row["URL"]
+ }
+})
 
 
 # -------- Constitution chunks ------

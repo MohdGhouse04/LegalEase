@@ -29,6 +29,6 @@ def retrieve_query(query, k=3):
     results=[]
 
     for i in I[0]:
-        results.append(chunks[i]["text"])
+        results.append(chunks[i])
 
     return results
